@@ -17,3 +17,18 @@ Gereksinimler değiştiğinde, yazılan kodda da değişmesi gereken kısımlar 
 <p>
 Bir sınıfı veya fonksiyonu geliştirdiğimizde sorumluluğunu ya da amacını iyi belirleyip, sınıfı ona göre tasarlamamız gerekir, böylece oluşabilecek herhangi bir değişimden, olabildiğince az şeyi güncelleyerek ve düzelterek istenilen geliştirmeyi gerçekleştirmiş oluruz. Sorumluluğun azaltılması demek değişime daha kolay adapte olmak demektir.
 </p>
+
+<h3>2- Open/Closed (Açık/Kapalı)</h3>
+
+<p>
+Sınıflarımız/fonksiyonlarımız değişikliğe kapalı ancak yeni davranışların eklenmesine açık olmalıdır.
+</p>
+
+<p>
+Open Sınıf için yeni davranışlar eklenebilmesini sağlar. Gereksinimler değiştiğinde, yeni gereksinimlerin karşılanabilmesi için bir sınıfa yeni veya farklı davranışlar eklenebilir olmasıdır.
+Closed Bir sınıf temel özelliklerinin değişimi ise mümkün olmamalıdır.
+</p>
+
+<p>
+Geliştirdiğimiz yazılıma/sınıfa varolan kodu değiştirmeden, yeni kod yazılarak yeni özellikler eklenebilmelidir. Yeni bir gereksinim geldiğinde mevcut kod üzerinde herhangi bir değişiklik yapıyorsanız, open/closed prensibine ters düşüp düşmediğinizi kontrol etmenizde yarar var. Yazılımı geliştirirken gelecekte oluşabilecek özellikler ve geliştirmeleri her şeyiyle öngöremeyiz. O yüzden oluşabileceğini düşündüğümüz kodlarıda şimdiden geliştirmemeliyiz. (bknz: KISS) Yeni gelecek özellikler için varolan kodu değiştirmeden, varolan yapıyı bozmadan esnek bir geliştirme modeli uygulayarak, önü açık ve gelecekten gereksinimlere kolayca adapte olup, ayak uydurabilen bir model uygulamalıyız.
+</p>
