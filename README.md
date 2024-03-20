@@ -60,3 +60,26 @@ Görüldüğü gibi single responsibility ve interface segregation prensipleri b
 <p>
 Bir methodun IS prensibine uymayan interface’e eklenmesi veya bir method üzerindeki değişiklik, Bu interface’i kullanan(implement etmiş) tüm sınıfları değiştirmemizi gerektirir. Bir arayüz yazarken, farklı sorumlulukları ya da farklı davranış gruplarını her zaman farklı arayüzlere ayırmak önemlidir.
 </p>
+
+<h3>5- Dependency Inversion (Bağımlılıkları Tersine Çevirme)</h3>
+
+<p>
+Sınıflar arası bağımlılıklar olabildiğince az olmalıdır özellikle üst seviye sınıflar alt seviye sınıflara bağımlı olmamalıdır.
+</p>
+
+<p>
+Bir sınıfın, metodun ya da özelliğin, onu kullanan diğer sınıflara karşı olan bağımlılığı en aza indirgenmelidir. Bir alt sınıfta yapılan değişiklikler üst sınıfları etkilememelidir.
+</p>
+
+<p>
+Yüksek seviye sınıflarda bir davranış değiştiğinde, alt seviye davranışların bu değişime uyum sağlaması gerekir. Ancak, düşük seviye sınıflarda bir davranış değiştiğinde, üst seviye sınıfların davranışında bir bozulma meydana gelmemelidir.
+</p>
+
+<p>
+Peki, bütün bu sorunlardan kurtulmanın yolu nedir ?
+Cevap: Dependency Inversion, yani üst sınıflar, alt seviyeli sınıflara bağlı olmamalı, çözüm ise her ikisi de soyut kavramlar üzerinden yönetilebilmelidir. Yüksek seviye ve düşük seviye sınıflar arasında bir soyutlama katmanı oluşturabiliriz.
+</p>
+
+<p>
+<b>Üst Seviye Sınıflar -> Soyutlama Katmanı -> Düşük Seviye Sınıfları</b>
+</p>
