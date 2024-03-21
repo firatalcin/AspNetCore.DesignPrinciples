@@ -83,3 +83,4 @@ Cevap: Dependency Inversion, yani üst sınıflar, alt seviyeli sınıflara bağ
 <p>
 <b>Üst Seviye Sınıflar -> Soyutlama Katmanı -> Düşük Seviye Sınıfları</b>
 </p>
+
